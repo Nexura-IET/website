@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "src/nexura_backend"
+]
+resolver = "2"

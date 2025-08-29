@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "nexura_backend": {
+      "candid": "src/nexura_backend/nexura_backend.did",
+      "package": "nexura_backend",
+      "type": "rust"
+    },
+    "nexura_frontend": {
+      "dependencies": [
+        "nexura_backend"
+      ],
+      "source": [
+        "src/nexura_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "nexura_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
